@@ -28,6 +28,7 @@ float aspect=1; //Ratio of width to height
 
 //Shader program object
 ShaderProgram *shaderProgram;
+ShaderProgram *shaderProgram2;
 
 //VAO and VBO handles
 GLuint vao;
@@ -36,7 +37,15 @@ GLuint bufColors;  //handle for VBO buffer which stores vertex colors
 GLuint bufNormals; //handle for VBO buffer which stores vertex normals
 GLuint bufTexCoords;
 
+GLuint vao2;
+GLuint bufVertices2; //handle for VBO buffer which stores vertex coordinates
+GLuint bufColors2;  //handle for VBO buffer which stores vertex colors
+GLuint bufNormals2; //handle for VBO buffer which stores vertex normals
+GLuint bufTexCoords2;
+
 GLuint tex0;
+
+GLuint tex02;
 //GLuint tex1;
 //Cube
 //float* vertices=Models::CubeInternal::vertices;
@@ -50,6 +59,12 @@ float* colors;
 float* normals;
 float* texCoords;
 int vertexCount;
+
+float* vertices2;
+float* colors2;
+float* normals2;
+float* texCoords2;
+int vertexCount2;
 
 //Teapot
 /*float* vertices=Models::TeapotInternal::vertices;
@@ -114,22 +129,23 @@ void assignVBOtoAttribute(ShaderProgram *shaderProgram,const char* attributeName
 
 
 //Preparation for drawing of a single object
-void prepareObject(ShaderProgram* shaderProgram) {
+void prepareObject(ShaderProgram* shaderProgram, GLuint* bufVertices, GLuint* bufColors, GLuint* bufNormals, GLuint* bufTexCoords, GLuint* vao,
+                   float* vertices, float* colors, float* normals, float* texCoords, int vertexCount) {
     //Build VBO buffers with object data
-    bufVertices=makeBuffer(vertices, vertexCount, sizeof(float)*4); //VBO with vertex coordinates
-    bufColors=makeBuffer(colors, vertexCount, sizeof(float)*4);//VBO with vertes colors
-    bufNormals=makeBuffer(normals, vertexCount, sizeof(float)*4);//VBO with vertex normals
-    bufTexCoords=makeBuffer(texCoords, vertexCount, sizeof(float)*2);
+    *bufVertices=makeBuffer(vertices, vertexCount, sizeof(float)*4); //VBO with vertex coordinates
+    *bufColors=makeBuffer(colors, vertexCount, sizeof(float)*4);//VBO with vertes colors
+    *bufNormals=makeBuffer(normals, vertexCount, sizeof(float)*4);//VBO with vertex normals
+    *bufTexCoords=makeBuffer(texCoords, vertexCount, sizeof(float)*2);
 
     //Create VAO which associates VBO with attributes in shading program
-    glGenVertexArrays(1,&vao); //Generate VAO handle and store it in the global variable
+    glGenVertexArrays(1,vao); //Generate VAO handle and store it in the global variable
 
-    glBindVertexArray(vao); //Activate newly created VAO
+    glBindVertexArray(*vao); //Activate newly created VAO
 
-    assignVBOtoAttribute(shaderProgram,"vertex",bufVertices,4); //"vertex" refers to the declaration "in vec4 vertex;" in vertex shader
-    assignVBOtoAttribute(shaderProgram,"color",bufColors,4); //"color" refers to the declaration "in vec4 color;" in vertex shader
-    assignVBOtoAttribute(shaderProgram,"normal",bufNormals,4); //"normal" refers to the declaration "in vec4 normal;" w vertex shader
-    assignVBOtoAttribute(shaderProgram, "texCoord0", bufTexCoords, 2);
+    assignVBOtoAttribute(shaderProgram,"vertex",*bufVertices,4); //"vertex" refers to the declaration "in vec4 vertex;" in vertex shader
+    assignVBOtoAttribute(shaderProgram,"color",*bufColors,4); //"color" refers to the declaration "in vec4 color;" in vertex shader
+    assignVBOtoAttribute(shaderProgram,"normal",*bufNormals,4); //"normal" refers to the declaration "in vec4 normal;" w vertex shader
+    assignVBOtoAttribute(shaderProgram, "texCoord0",*bufTexCoords, 2);
 
     glBindVertexArray(0); //Deactivate VAO
 }
@@ -165,9 +181,11 @@ void initOpenGLProgram(GLFWwindow* window) {
     glfwSetFramebufferSizeCallback(window,windowResize);
 
     shaderProgram=new ShaderProgram("vshader.glsl",NULL,"fshader.glsl"); //Read, compile and link the shader program
+    shaderProgram2= new ShaderProgram("vshader.glsl", NULL, "fshader.glsl");
     tex0=readTexture("metal.png");
 
-    prepareObject(shaderProgram);
+    prepareObject(shaderProgram, &bufVertices, &bufColors, &bufNormals, &bufTexCoords, &vao, vertices, colors, normals, texCoords, vertexCount);
+    prepareObject(shaderProgram2, &bufVertices2, &bufColors2, &bufNormals2, &bufTexCoords2, &vao2, vertices2, colors2, normals2, texCoords2, vertexCount2);
 
 }
 
@@ -186,7 +204,7 @@ void freeOpenGLProgram() {
 
 }
 
-void drawObject(GLuint vao, ShaderProgram *shaderProgram, mat4 mP, mat4 mV, mat4 mM) {
+void drawObject(GLuint vao, ShaderProgram *shaderProgram, mat4 mP, mat4 mV, mat4 mM, int vertexCount) {
     //Turn on the shading program that will be used for drawing.
     //While in this program it would be perfectly correct to execute this once in the initOpenGLProgram,
     //in most cases more than one shading program is used and hence, it should be switched between drawing of objects
@@ -238,15 +256,29 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y) {
 
     //Compute model matrix
     glm::mat4 M = glm::mat4(1.0f);
+
+    glm::mat4 P2 = glm::perspective(50 * PI / 180,aspect, 1.0f, 400.0f); //Compute projection matrix
+
+    glm::mat4 V2 = glm::lookAt( //Compute view matrix
+                              glm::vec3(0.0f, 0.0f, -60.0f),
+                              glm::vec3(0.0f, 0.0f, 0.0f),
+                              glm::vec3(0.0f, 1.0f, 0.0f));
+
+
+    //Compute model matrix
+    glm::mat4 M2 = glm::mat4(1.0f);
+
+
     M = glm::translate(M, glm::vec3(cos(angle_x)*10.0f, 0.0f, 0.0f));
     M = glm::translate(M, glm::vec3(0.0f, sin(angle_y)*10.0f, 0.0f));
     M = glm::translate(M, glm::vec3(0.0f, 0.0f, sin(angle_y)*15.0f));
-    M = glm::rotate(M, angle_x *0.9f, glm::vec3(1, 0, 0));
-    M = glm::rotate(M, angle_y *0.5f, glm::vec3(0, 1, 0));
+    M2 = glm::rotate(M2, angle_x *0.9f, glm::vec3(1, 0, 0));
+    M2 = glm::rotate(M2, angle_y *0.5f, glm::vec3(0, 1, 0));
 
 
     //Draw object
-    drawObject(vao,shaderProgram,P,V,M);
+    drawObject(vao,shaderProgram,P,V,M, vertexCount);
+    drawObject(vao2,shaderProgram2, P2,V2,M2, vertexCount2);
 
     //Swap front and back buffers
     glfwSwapBuffers(window);
@@ -261,48 +293,23 @@ int main(void)
     if(!seat.loadFromOBJFile("rails.obj")) {
         return 1;
     }
-/*
-    cout<<"wierzcholkow: "<<seat.getVertices().size()<<endl;
 
-    int vertexCount1 = seat.getVertices().size();
-
-    float *vertices1 = &seat.getVertices().data()->x;
-    float *colors1 = &seat.getVertices().data()->x;
-    float *normals1 = &seat.getNormals().data()->x;
-    float *texCoords1 = &seat.getUvs().data()->x;
-    texCoords = &seat.getUvs().data()->x;
-
-    float * verticesTmp = new float[vertexCount1 * 4];
-    float * normalsTmp = new float[vertexCount1 * 4];
-    float * colorsTmp = new float[vertexCount1 * 4];
-
-    int k = 0;
-    for(int i = 0; i < vertexCount1*3; i+=3){
-        verticesTmp[k] = vertices1[i];
-        verticesTmp[k + 1] = vertices1[i + 1];
-        verticesTmp[k + 2] = vertices1[i + 2];
-        verticesTmp[k + 3] = 1.0f;
-
-        normalsTmp[k] = normals1[i];
-        normalsTmp[k + 1] = normals1[i + 1];
-        normalsTmp[k + 2] = normals1[i + 2];
-        normalsTmp[k + 3] = 1.0f;
-
-        colorsTmp[k] = colors1[i];
-        colorsTmp[k + 1] = colors1[i + 1];
-        colorsTmp[k + 2] = colors1[i + 2];
-        colorsTmp[k + 3] = 1.0f;
-
-        k += 4;
+    ModelO seat2;
+      if(!seat2.loadFromOBJFile("seat.obj")) {
+        return 1;
     }
 
-    cout<< "zakonczono "<<endl;
-*/
     vertexCount = seat.getVertices().size();
     vertices = &seat.getVertices().data()->x;
     colors = &seat.getVertices().data()->x;
     normals = &seat.getNormals().data()->x;
     texCoords = &seat.getUvs().data()->x;
+
+    vertexCount2 = seat2.getVertices().size();
+    vertices2 = &seat2.getVertices().data()->x;
+    colors2 = &seat2.getVertices().data()->x;
+    normals2 = &seat2.getNormals().data()->x;
+    texCoords2 = &seat2.getUvs().data()->x;
 
 
     GLFWwindow* window; //Pointer to window object
@@ -346,8 +353,6 @@ int main(void)
 
     glfwSetTime(0); //Zero time counter
 
-    //Main loop
-    cout<<"FSasfa"<<endl;
     while (!glfwWindowShouldClose(window)) //As long as window shouldnt be closed...
     {
         angle_x += speed_x*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
