@@ -24,3 +24,9 @@
 *.exe
 *.out
 *.app
+
+._*
+*.mtl
+*.o
+GLFW/
+glew/

@@ -21,8 +21,8 @@
 #include "Object.hpp"
 using namespace glm;
 
-float speed_x = 1.14; // [radians/s]
-float speed_y = 1.14; // [radians/s]
+float speed_x = 0; // [radians/s]
+float speed_y = 0; // [radians/s]
 
 float aspect=1; //Ratio of width to height
 
@@ -228,10 +228,10 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y) {
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Clear color and depth buffers
 
-    glm::mat4 P = glm::perspective(50 * PI / 180,aspect, 1.0f, 50.0f); //Compute projection matrix
+    glm::mat4 P = glm::perspective(50 * PI / 180,aspect, 1.0f, 400.0f); //Compute projection matrix
 
     glm::mat4 V = glm::lookAt( //Compute view matrix
-                              glm::vec3(0.0f, 0.0f, -20.0f),
+                              glm::vec3(0.0f, 0.0f, -60.0f),
                               glm::vec3(0.0f, 0.0f, 0.0f),
                               glm::vec3(0.0f, 1.0f, 0.0f));
 
@@ -258,7 +258,7 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y) {
 int main(void)
 {
     ModelO seat;
-    if(!seat.loadFromOBJFile("seat1.obj")) {
+    if(!seat.loadFromOBJFile("rails.obj")) {
         return 1;
     }
 /*
