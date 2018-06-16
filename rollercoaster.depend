@@ -1,0 +1,1849 @@
+# depslib dependency file v1.0
+1528649446 source:c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\cube.cpp
+	"cube.hpp"
+
+1528649446 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\cube.hpp
+	"model.h"
+
+1528649446 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\model.h
+	<vector>
+	"glm/glm.hpp"
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\_fixes.hpp
+	<cmath>
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1528649456 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\fwd.hpp
+	"detail/setup.hpp"
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec.hpp
+	"qualifier.hpp"
+	"type_int.hpp"
+	"compute_vector_relational.hpp"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<cstring>
+	<limits>
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat.hpp
+	"qualifier.hpp"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\vec2.hpp
+	"detail/setup.hpp"
+	"detail/type_vec2.hpp"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\_swizzle.hpp
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\_swizzle_func.hpp
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec2.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\vec3.hpp
+	"detail/setup.hpp"
+	"detail/type_vec3.hpp"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec3.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\vec4.hpp
+	"detail/setup.hpp"
+	"detail/type_vec4.hpp"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec4_simd.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat2x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x2.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/type_mat.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat2x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x3.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat2x3.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat2x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x4.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat2x4.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat3x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x2.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat3x2.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat3x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x3.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat3x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x4.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat3x4.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat4x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x2.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x2.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat4x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x3.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x3.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\mat4x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x4.hpp"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_mat4x4_simd.inl
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec1.hpp
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_vector_relational.inl
+	"compute_vector_relational.hpp"
+	"func_vector_relational_simd.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_vector_relational_simd.inl
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1528649456 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\simd\exponential.h
+	"platform.h"
+
+1528649446 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\common.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/type_int.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1528649456 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\simd\common.h
+	"platform.h"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1528649456 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\simd\geometric.h
+	"common.h"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1528649456 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\simd\matrix.h
+	"geometric.h"
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_trigonometric_simd.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\packing.hpp
+	"detail/type_vec2.hpp"
+	"detail/type_vec4.hpp"
+	"detail/func_packing.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1528649449 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_half.inl
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_packing_simd.inl
+
+1528649447 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\integer.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_integer.inl
+	"../ext/vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\ext\vec1.hpp
+	"../fwd.hpp"
+	"../detail/type_vec.hpp"
+	"../detail/_swizzle.hpp"
+	"../detail/_swizzle_func.hpp"
+	<cstddef>
+	"../detail/type_vec1.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\type_vec1.inl
+
+1528649448 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1528649456 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\simd\integer.h
+
+1527100418 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1528649446 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\constants.h
+
+1528627530 source:c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1528627530 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1528654353 source:c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"shaderprogram.hpp"
+	"lodepng.h"
+	"cube.hpp"
+	"constants.h"
+	"Object.hpp"
+
+1527102259 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\constants.inl
+	<limits>
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../detail/compute_vector_relational.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1528649450 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/type_vec.hpp"
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\quaternion_simd.inl
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\vec1.hpp
+	"../ext/vec1.hpp"
+	"vec1.inl"
+
+1528649452 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\vec1.inl
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\type_ptr.inl
+	<cstring>
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1528649451 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1528649446 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\shaderprogram.hpp
+	"GL/glew.h"
+	"stdio.h"
+
+1528649446 c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\object.hpp
+	"glm/vec2.hpp"
+	"glm/vec3.hpp"
+	"glm/vec4.hpp"
+	<vector>
+	<string>
+
+1528649446 source:c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\model.cpp
+	"model.h"
+
+1528650045 source:c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\object.cpp
+	"Object.hpp"
+	<stdlib.h>
+	<stdio.h>
+
+1528649446 source:c:\users\agata\downloads\rollercoaster-opengl-master\rollercoaster-opengl-master\rollercoaster\shaderprogram.cpp
+	"shaderprogram.hpp"
+
+1528645848 source:e:\rollercoaster 2\cube.cpp
+	"cube.hpp"
+
+1528645848 e:\rollercoaster 2\cube.hpp
+	"model.h"
+
+1528645848 e:\rollercoaster 2\model.h
+	<vector>
+	"glm/glm.hpp"
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1528645848 e:\rollercoaster 2\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1528645848 e:\rollercoaster 2\glm\detail\_fixes.hpp
+	<cmath>
+
+1528645850 e:\rollercoaster 2\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1528645858 e:\rollercoaster 2\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1528645848 e:\rollercoaster 2\glm\fwd.hpp
+	"detail/setup.hpp"
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1528645850 e:\rollercoaster 2\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_vec.hpp
+	"qualifier.hpp"
+	"type_int.hpp"
+	"compute_vector_relational.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<cstring>
+	<limits>
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat.hpp
+	"qualifier.hpp"
+
+1528645848 e:\rollercoaster 2\glm\vec2.hpp
+	"detail/setup.hpp"
+	"detail/type_vec2.hpp"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1528645848 e:\rollercoaster 2\glm\detail\_swizzle.hpp
+
+1528645850 e:\rollercoaster 2\glm\detail\_swizzle_func.hpp
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec2.inl
+
+1528645848 e:\rollercoaster 2\glm\vec3.hpp
+	"detail/setup.hpp"
+	"detail/type_vec3.hpp"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec3.inl
+
+1528645848 e:\rollercoaster 2\glm\vec4.hpp
+	"detail/setup.hpp"
+	"detail/type_vec4.hpp"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec4_simd.inl
+
+1528645848 e:\rollercoaster 2\glm\mat2x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x2.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1528645848 e:\rollercoaster 2\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/type_mat.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1528645848 e:\rollercoaster 2\glm\mat2x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x3.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat2x3.inl
+
+1528645848 e:\rollercoaster 2\glm\mat2x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x4.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat2x4.inl
+
+1528645848 e:\rollercoaster 2\glm\mat3x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x2.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat3x2.inl
+
+1528645848 e:\rollercoaster 2\glm\mat3x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x3.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1528645848 e:\rollercoaster 2\glm\mat3x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x4.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat3x4.inl
+
+1528645848 e:\rollercoaster 2\glm\mat4x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x2.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x2.inl
+
+1528645848 e:\rollercoaster 2\glm\mat4x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x3.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x3.inl
+
+1528645848 e:\rollercoaster 2\glm\mat4x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x4.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_mat4x4_simd.inl
+
+1528645850 e:\rollercoaster 2\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1528645848 e:\rollercoaster 2\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1528645848 e:\rollercoaster 2\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec1.hpp
+
+1528645850 e:\rollercoaster 2\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1528645848 e:\rollercoaster 2\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_vector_relational.inl
+	"compute_vector_relational.hpp"
+	"func_vector_relational_simd.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_vector_relational_simd.inl
+
+1528645850 e:\rollercoaster 2\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1528645858 e:\rollercoaster 2\glm\simd\exponential.h
+	"platform.h"
+
+1528645848 e:\rollercoaster 2\glm\common.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/type_int.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1528645858 e:\rollercoaster 2\glm\simd\common.h
+	"platform.h"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1528645858 e:\rollercoaster 2\glm\simd\geometric.h
+	"common.h"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1528645858 e:\rollercoaster 2\glm\simd\matrix.h
+	"geometric.h"
+
+1528645848 e:\rollercoaster 2\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_trigonometric_simd.inl
+
+1528645848 e:\rollercoaster 2\glm\packing.hpp
+	"detail/type_vec2.hpp"
+	"detail/type_vec4.hpp"
+	"detail/func_packing.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\type_half.inl
+
+1528645850 e:\rollercoaster 2\glm\detail\func_packing_simd.inl
+
+1528645848 e:\rollercoaster 2\glm\integer.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1528645850 e:\rollercoaster 2\glm\detail\func_integer.inl
+	"../ext/vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1528645852 e:\rollercoaster 2\glm\ext\vec1.hpp
+	"../fwd.hpp"
+	"../detail/type_vec.hpp"
+	"../detail/_swizzle.hpp"
+	"../detail/_swizzle_func.hpp"
+	<cstddef>
+	"../detail/type_vec1.inl"
+
+1528645852 e:\rollercoaster 2\glm\detail\type_vec1.inl
+
+1528645850 e:\rollercoaster 2\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1528645858 e:\rollercoaster 2\glm\simd\integer.h
+
+1527096820 e:\rollercoaster 2\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1528645848 e:\rollercoaster 2\constants.h
+
+1528623932 source:e:\rollercoaster 2\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1528623932 e:\rollercoaster 2\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1528652778 source:e:\rollercoaster 2\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"shaderprogram.hpp"
+	"lodepng.h"
+	"cube.hpp"
+	"constants.h"
+	"Object.hpp"
+
+1527098660 e:\rollercoaster 2\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1528645852 e:\rollercoaster 2\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1528645852 e:\rollercoaster 2\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1528645852 e:\rollercoaster 2\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1528645852 e:\rollercoaster 2\glm\gtc\constants.inl
+	<limits>
+
+1528645852 e:\rollercoaster 2\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../detail/compute_vector_relational.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1528645852 e:\rollercoaster 2\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1528645852 e:\rollercoaster 2\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/type_vec.hpp"
+
+1528645852 e:\rollercoaster 2\glm\gtc\quaternion_simd.inl
+
+1528645852 e:\rollercoaster 2\glm\gtc\vec1.hpp
+	"../ext/vec1.hpp"
+	"vec1.inl"
+
+1528645854 e:\rollercoaster 2\glm\gtc\vec1.inl
+
+1528645852 e:\rollercoaster 2\glm\gtc\type_ptr.inl
+	<cstring>
+
+1528645852 e:\rollercoaster 2\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1528645852 e:\rollercoaster 2\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1528645848 e:\rollercoaster 2\shaderprogram.hpp
+	"GL/glew.h"
+	"stdio.h"
+
+1528645848 e:\rollercoaster 2\object.hpp
+	"glm/vec2.hpp"
+	"glm/vec3.hpp"
+	"glm/vec4.hpp"
+	<vector>
+	<string>
+
+1528645848 source:e:\rollercoaster 2\model.cpp
+	"model.h"
+
+1528646446 source:e:\rollercoaster 2\object.cpp
+	"Object.hpp"
+	<stdlib.h>
+	<stdio.h>
+
+1528645848 source:e:\rollercoaster 2\shaderprogram.cpp
+	"shaderprogram.hpp"
+
+1528645848 source:c:\users\maciej\desktop\rollercoaster 2\cube.cpp
+	"cube.hpp"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\cube.hpp
+	"model.h"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\model.h
+	<vector>
+	"glm/glm.hpp"
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\detail\_fixes.hpp
+	<cmath>
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1528645858 c:\users\maciej\desktop\rollercoaster 2\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\fwd.hpp
+	"detail/setup.hpp"
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec.hpp
+	"qualifier.hpp"
+	"type_int.hpp"
+	"compute_vector_relational.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<cstring>
+	<limits>
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat.hpp
+	"qualifier.hpp"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\vec2.hpp
+	"detail/setup.hpp"
+	"detail/type_vec2.hpp"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\detail\_swizzle.hpp
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\_swizzle_func.hpp
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec2.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\vec3.hpp
+	"detail/setup.hpp"
+	"detail/type_vec3.hpp"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec3.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\vec4.hpp
+	"detail/setup.hpp"
+	"detail/type_vec4.hpp"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec4_simd.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat2x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x2.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/type_mat.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat2x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x3.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat2x3.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat2x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x4.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat2x4.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat3x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x2.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat3x2.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat3x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x3.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat3x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x4.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat3x4.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat4x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x2.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x2.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat4x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x3.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x3.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\mat4x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x4.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_mat4x4_simd.inl
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec1.hpp
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_vector_relational.inl
+	"compute_vector_relational.hpp"
+	"func_vector_relational_simd.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_vector_relational_simd.inl
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1528645858 c:\users\maciej\desktop\rollercoaster 2\glm\simd\exponential.h
+	"platform.h"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\common.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/type_int.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1528645858 c:\users\maciej\desktop\rollercoaster 2\glm\simd\common.h
+	"platform.h"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1528645858 c:\users\maciej\desktop\rollercoaster 2\glm\simd\geometric.h
+	"common.h"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1528645858 c:\users\maciej\desktop\rollercoaster 2\glm\simd\matrix.h
+	"geometric.h"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_trigonometric_simd.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\packing.hpp
+	"detail/type_vec2.hpp"
+	"detail/type_vec4.hpp"
+	"detail/func_packing.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_half.inl
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_packing_simd.inl
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\integer.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_integer.inl
+	"../ext/vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\ext\vec1.hpp
+	"../fwd.hpp"
+	"../detail/type_vec.hpp"
+	"../detail/_swizzle.hpp"
+	"../detail/_swizzle_func.hpp"
+	<cstddef>
+	"../detail/type_vec1.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\detail\type_vec1.inl
+
+1528645850 c:\users\maciej\desktop\rollercoaster 2\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1528645858 c:\users\maciej\desktop\rollercoaster 2\glm\simd\integer.h
+
+1527096820 c:\users\maciej\desktop\rollercoaster 2\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\constants.h
+
+1528623932 source:c:\users\maciej\desktop\rollercoaster 2\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1528623932 c:\users\maciej\desktop\rollercoaster 2\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1528645848 source:c:\users\maciej\desktop\rollercoaster 2\model.cpp
+	"model.h"
+
+1528645848 source:c:\users\maciej\desktop\rollercoaster 2\shaderprogram.cpp
+	"shaderprogram.hpp"
+
+1528645848 c:\users\maciej\desktop\rollercoaster 2\shaderprogram.hpp
+	"GL/glew.h"
+	"stdio.h"
+
+1527098660 c:\users\maciej\desktop\rollercoaster 2\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1529179111 source:c:\users\maciej\desktop\rollercoaster 2\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"shaderprogram.hpp"
+	"lodepng.h"
+	"cube.hpp"
+	"constants.h"
+	"Object.hpp"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\constants.inl
+	<limits>
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../detail/compute_vector_relational.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/type_vec.hpp"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\quaternion_simd.inl
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\vec1.hpp
+	"../ext/vec1.hpp"
+	"vec1.inl"
+
+1528645854 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\vec1.inl
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\type_ptr.inl
+	<cstring>
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1529178490 c:\users\maciej\desktop\rollercoaster 2\object.hpp
+	"glm/vec2.hpp"
+	"glm/vec3.hpp"
+	"glm/vec4.hpp"
+	<vector>
+	<string>
+
+1529179761 source:c:\users\maciej\desktop\rollercoaster 2\object.cpp
+	"Object.hpp"
+	<stdlib.h>
+	<stdio.h>
+
