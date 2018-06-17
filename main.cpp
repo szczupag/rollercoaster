@@ -377,6 +377,7 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
     glm::mat4 V2 = glm::lookAt( //Compute view matrix
                               cameraPos, cameraPos + cameraFront, cameraUp);
 
+<<<<<<< HEAD
     //if( ((int)(glfwGetTime() * 20)% 1) == 0){
       //  moveCarClick();
     //}
@@ -384,6 +385,10 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
     if( glfwGetTime() - startTime > 0.01) {
         moveCarClick();
         startTime = glfwGetTime();
+=======
+    if( ((int)(glfwGetTime()*20)% 1) == 0){
+       moveCarClick();
+>>>>>>> a0dbcb5031119041e63e862ebd13d492ad4b110d
     }
 
     Mcloud = glm::rotate(Mcloud, -0.001f , glm::vec3(0.0f, 1.0f, 0.0f));
@@ -392,10 +397,10 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
 
 
     for(int i = 0; i < models.size(); i++){
-        if(i == 1){
+        if(i == 6 || i == 7){
             models[i]->drawObject(P2, V2, Mstart);
 
-        } else if (i == 2){
+        } else if (i == 1){
             models[i]->drawObject(P2, V2, Mcloud);
         } else {
               models[i]->drawObject(P2, V2, M);
@@ -417,10 +422,10 @@ int main(void)
         return 1;
     }
 
-    Model car;
+    /*Model car;
       if(!car.loadFromOBJFile("car.obj")) {
         return 1;
-    }
+    }*/
 
     Model cloud;
     if(!cloud.loadFromOBJFile("clouds_attatched.obj")){
@@ -447,13 +452,25 @@ int main(void)
         return 1;
     }
 
+    Model ludki;
+      if(!ludki.loadFromOBJFile("ludki.obj")){
+        return 1;
+    }
+
+    Model ponton;
+      if(!ponton.loadFromOBJFile("ponton.obj")){
+        return 1;
+    }
+
     models.push_back(&rails);
-    models.push_back(&car);
+    //models.push_back(&car);
     models.push_back(&cloud);
     models.push_back(&mountains);
     models.push_back(&trees);
     models.push_back(&support);
     models.push_back(&sun);
+    models.push_back(&ludki);
+    models.push_back(&ponton);
 
     GLFWwindow* window; //Pointer to window object
 
@@ -485,12 +502,18 @@ int main(void)
 
     initOpenGLProgram(window); //Initialization procedure
     rails.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
+<<<<<<< HEAD
+    //car.init("vshader.glsl", "fshader.glsl", "bricks.png", shaderProgramCommon);
+=======
     car.init("vshader.glsl", "fshader.glsl", "autgo.png", shaderProgramCommon);
+>>>>>>> 3856457b2893bcfbdb7ca40239e8fbed62bee31a
     cloud.init("vshader.glsl", "fshader.glsl", "white.png", shaderProgramCommon);
     mountains.init("vshader.glsl", "fshader.glsl", "mountains_tex.png", shaderProgramCommon);
     trees.init("vshader.glsl", "fshader.glsl", "ground_blured.png", shaderProgramCommon);
     support.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
     sun.init("vshader.glsl", "fshader.glsl", "sun_tex.png", shaderProgram2);
+    ludki.init("vshader.glsl", "fshader.glsl", "spider_tex.png", shaderProgramCommon);
+    ponton.init("vshader.glsl", "fshader.glsl", "ponton.png", shaderProgramCommon);
 
 
     float angle_x = 0; //Object rotation angle
