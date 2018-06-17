@@ -44,7 +44,7 @@ public:
 
     void freeOpenGLProgram();
 
-    void init(char* vertexShader, char* fragmentShader, char* textureFile);
+    void init(char* vertexShader, char* fragmentShader, char* textureFile, ShaderProgram * shaderProgramCommon);
 
     void drawObject(glm::mat4 mP, glm::mat4 mV, glm::mat4 mM);
 
