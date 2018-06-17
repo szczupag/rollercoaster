@@ -387,7 +387,7 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
         if(i == 1){
             models[i]->drawObject(P2, V2, Mstart);
 
-        } else if (i == 2){
+        } else if (i == 2 || i == 6){
             models[i]->drawObject(P2, V2, Mcloud);
         } else {
               models[i]->drawObject(P2, V2, M);
