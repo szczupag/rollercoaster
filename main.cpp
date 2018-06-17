@@ -23,7 +23,7 @@
 
 using namespace glm;
 
-float speed_x = 0; // [radians/s]
+float speed_x = 1.0f; // [radians/s]
 float speed_y = 0; // [radians/s]
 vec3 cameraPos = vec3(0.0f, 10.0f, -60.0f);
 vec3 cameraFront = vec3(0.0f, 0.0f, -1.0f);
@@ -35,6 +35,13 @@ float pitch2 = 0.0f, yaw2 = 0.0f;
 
 float aspect=1; //Ratio of width to height
 
+
+glm::vec4 moveCar(){
+
+}
+
+
+
 void error_callback(int error, const char* description) {
     fputs(description, stderr);
 }
@@ -42,7 +49,7 @@ void error_callback(int error, const char* description) {
 //Key event processing procedure
 void key_callback(GLFWwindow* window, int key,
                   int scancode, int action, int mods) {
-    float cameraSpeed = 0.5f;
+    float cameraSpeed = 6.5f;
 
     if (action == GLFW_PRESS) {
         if (key == GLFW_KEY_LEFT)  cameraPos -= normalize(cross(cameraFront, cameraUp)) * cameraSpeed;
@@ -53,10 +60,10 @@ void key_callback(GLFWwindow* window, int key,
 
 
     if (action == GLFW_RELEASE) {
-        if (key == GLFW_KEY_LEFT) speed_y = 0;
-        if (key == GLFW_KEY_RIGHT) speed_y = 0;
-        if (key == GLFW_KEY_UP) speed_x = 0;
-        if (key == GLFW_KEY_DOWN) speed_x = 0;
+      //  if (key == GLFW_KEY_LEFT) speed_y = 0;
+       // if (key == GLFW_KEY_RIGHT) speed_y = 0;
+        //if (key == GLFW_KEY_UP)
+        //if (key == GLFW_KEY_DOWN) speed_x = 0;
     }
 }
 
@@ -143,9 +150,10 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, vector<Model*> 
 
 
 
+
     //Compute model matrix
     glm::mat4 M2 = glm::mat4(1.0f);
-
+  M2 = glm::translate(M2, glm::vec3(angle_x * 5, 0.0f, 0.0f));
 
 
 
@@ -244,9 +252,10 @@ int main(void)
 
     while (!glfwWindowShouldClose(window)) //As long as window shouldnt be closed...
     {
-        //angle_x += speed_x*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
+        angle_x += speed_x*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
         //angle_y += speed_y*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
         glfwSetTime(0); //Zero time counter
+        cout<<glfwGetTime()<<endl;
         drawScene(window,angle_x,angle_y, models); //Execute drawing procedure
         glfwPollEvents(); //Execute callback procedures which process events
     }
