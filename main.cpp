@@ -264,9 +264,6 @@ void moveCarClick(){
     Mstart = translate(Mstart, transVec);
     cout<<to_string(Mstart)<<endl;
     cout<<index<<endl;
-    //if(index == 69) {
-      //  Mstart = glm::mat4(1.0f);
-    //}
     index= (index+3);
         if(index == 627) {
         index = 0;
@@ -346,7 +343,7 @@ void windowResize(GLFWwindow* window, int width, int height) {
 //Initialization procedure
 void initOpenGLProgram(GLFWwindow* window) {
     //************Insert initialization code here************
-    glClearColor(0.9, 0.5, 0.5, 1); //Clear the screen to black
+    glClearColor(135 / 255.0f, 206 /255.0f, 235/255.0f, 1); //Clear the screen to black
     glEnable(GL_DEPTH_TEST); //Turn on Z-Buffer
     glfwSetKeyCallback(window, key_callback); //Register key event processing procedure
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -367,7 +364,7 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Clear color and depth buffers
 
-    glm::mat4 P = glm::perspective(50 * PI / 180,aspect, 1.0f, 400.0f); //Compute projection matrix
+    glm::mat4 P = glm::perspective(50 * PI / 180,aspect, 1.0f, 1500.0f); //Compute projection matrix
 
     glm::mat4 V = glm::lookAt( //Compute view matrix
                               glm::vec3(0.0f, 0.0f, -60.0f),
@@ -386,6 +383,7 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
     if( ((int)(glfwGetTime() * 20)% 1) == 0){
         moveCarClick();
     }
+
 
     //g//lm::mat4 M2;
     //if(first) {
@@ -462,7 +460,7 @@ int main(void)
     }
 
 
-    window = glfwCreateWindow(1000, 1000, "OpenGL", NULL, NULL);  //Create 500x500 window with "OpenGL" as well as OpenGL context.
+    window = glfwCreateWindow(1024, 600, "OpenGL", NULL, NULL);  //Create 500x500 window with "OpenGL" as well as OpenGL context.
 
     if (!window) //If window could not be created, then end the program
     {
