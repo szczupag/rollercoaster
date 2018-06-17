@@ -482,7 +482,7 @@ int main(void)
     mountains.init("vshader.glsl", "fshader.glsl", "mountains_tex.png", shaderProgramCommon);
     trees.init("vshader.glsl", "fshader.glsl", "ground_blured.png", shaderProgramCommon);
     support.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
-    sun.init("vshader.glsl", "fshader.glsl", "cwiek.png", shaderProgramCommon);
+    sun.init("vshader.glsl", "fshader.glsl", "sun_tex.png", shaderProgramCommon);
 
 
 
