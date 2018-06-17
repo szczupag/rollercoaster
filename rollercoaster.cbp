@@ -40,7 +40,7 @@
 			<Add directory="." />
 		</Compiler>
 		<Linker>
-			<Add library="glew\lib\glew32s.lib" />
+			<Add library="glew/lib/glew32s.lib" />
 			<Add library="glfw3" />
 			<Add library="opengl32" />
 			<Add library="gdi32" />
@@ -48,6 +48,8 @@
 			<Add directory="glfw/lib" />
 			<Add directory="glew/lib" />
 		</Linker>
+		<Unit filename="Model.cpp" />
+		<Unit filename="Model.h" />
 		<Unit filename="Object.cpp" />
 		<Unit filename="Object.hpp" />
 		<Unit filename="constants.h" />

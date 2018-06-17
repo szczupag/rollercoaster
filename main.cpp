@@ -186,8 +186,8 @@ int main(void)
     }
 
     initOpenGLProgram(window); //Initialization procedure
-    rails.init("vshader.glsl", "fshader.glsl", "maciejXD.png");
-    car.init("vshader.glsl", "fshader.glsl", "metal.png");
+    rails.init("vshader.glsl", "fshader.glsl", "metal.png");
+    car.init("vshader.glsl", "fshader.glsl", "bricks.png");
     cloud.init("vshader.glsl", "fshader.glsl", "white.png");
     mountains.init("vshader.glsl", "fshader.glsl", "ground.png");
 
