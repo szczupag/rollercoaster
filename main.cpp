@@ -132,18 +132,30 @@ int main(void)
 {
     vector<Model*> models;
 
-    Model seat;
-    if(!seat.loadFromOBJFile("rails.obj")) {
+    Model rails;
+    if(!rails.loadFromOBJFile("rails.obj")) {
         return 1;
     }
 
-    Model seat2;
-      if(!seat2.loadFromOBJFile("car_wtex.obj")) {
+    Model car;
+      if(!car.loadFromOBJFile("car_wtex.obj")) {
         return 1;
     }
 
-    models.push_back(&seat2);
-    models.push_back(&seat);
+    Model cloud;
+    if(!cloud.loadFromOBJFile("cloud3.obj")){
+        return 1;
+    }
+
+    Model mountains;
+    if(!mountains.loadFromOBJFile("mountains.obj")){
+        return 1;
+    }
+
+    models.push_back(&rails);
+    models.push_back(&car);
+    models.push_back(&cloud);
+    models.push_back(&mountains);
 
     GLFWwindow* window; //Pointer to window object
 
@@ -174,8 +186,11 @@ int main(void)
     }
 
     initOpenGLProgram(window); //Initialization procedure
-    seat2.init("vshader.glsl", "fshader.glsl", "maciejXD.png");
-    seat.init("vshader.glsl", "fshader.glsl", "bricks.png");
+    rails.init("vshader.glsl", "fshader.glsl", "maciejXD.png");
+    car.init("vshader.glsl", "fshader.glsl", "metal.png");
+    cloud.init("vshader.glsl", "fshader.glsl", "white.png");
+    mountains.init("vshader.glsl", "fshader.glsl", "ground.png");
+
 
 
     float angle_x = 0; //Object rotation angle

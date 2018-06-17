@@ -29,4 +29,3 @@
 *.mtl
 *.o
 GLFW/
-glew/
