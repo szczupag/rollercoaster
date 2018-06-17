@@ -483,8 +483,8 @@ int main(void)
     rails.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
     car.init("vshader.glsl", "fshader.glsl", "bricks.png", shaderProgramCommon);
     cloud.init("vshader.glsl", "fshader.glsl", "white.png", shaderProgramCommon);
-    mountains.init("vshader.glsl", "fshader.glsl", "ground.png", shaderProgramCommon);
-    trees.init("vshader.glsl", "fshader.glsl", "ground.png", shaderProgramCommon);
+    mountains.init("vshader.glsl", "fshader.glsl", "mountains_tex.png", shaderProgramCommon);
+    trees.init("vshader.glsl", "fshader.glsl", "ground_blured.png", shaderProgramCommon);
     support.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
 
 
