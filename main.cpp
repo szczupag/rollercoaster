@@ -92,8 +92,8 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, vector<Model*> 
 
     glm::mat4 V = glm::lookAt( //Compute view matrix
                               glm::vec3(0.0f, 0.0f, -60.0f),
-                              glm::vec3(0.0f, 0.0f, -20.0f),
-                              glm::vec3(0.0f, 1.0f, -20.0f));
+                              glm::vec3(0.0f, 0.0f, 0.0f),
+                              glm::vec3(0.0f, 10.0f, 10.0f));
 
 
     //Compute model matrix
@@ -102,7 +102,13 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, vector<Model*> 
     glm::mat4 P2 = glm::perspective(50 * PI / 180,aspect, 1.0f, 360.0f); //Compute projection matrix
 
     glm::mat4 V2 = glm::lookAt( //Compute view matrix
+<<<<<<< HEAD
                               cameraPos, cameraPos + cameraFront, cameraUp);
+=======
+                              glm::vec3(0.0f, 0.0f, -60.0f),
+                              glm::vec3(0.0f, 0.0f, 0.0f),
+                              glm::vec3(0.0f, 10.0f, 10.0f));
+>>>>>>> 3615ecb7d715c7b84c4b17b22e77c46aea08af48
 
 
     //Compute model matrix
@@ -163,10 +169,16 @@ int main(void)
         return 1;
     }
 
+    Model trees;
+    if(!trees.loadFromOBJFile("trees_attatched.obj")){
+        return 1;
+    }
+
     models.push_back(&rails);
     models.push_back(&car);
     models.push_back(&cloud);
     models.push_back(&mountains);
+    models.push_back(&trees);
 
     GLFWwindow* window; //Pointer to window object
 
@@ -201,6 +213,7 @@ int main(void)
     car.init("vshader.glsl", "fshader.glsl", "bricks.png");
     cloud.init("vshader.glsl", "fshader.glsl", "white.png");
     mountains.init("vshader.glsl", "fshader.glsl", "ground.png");
+    trees.init("vshader.glsl", "fshader.glsl", "ground.png");
 
 
 
@@ -211,8 +224,8 @@ int main(void)
 
     while (!glfwWindowShouldClose(window)) //As long as window shouldnt be closed...
     {
-        angle_x += speed_x*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
-        angle_y += speed_y*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
+        //angle_x += speed_x*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
+        //angle_y += speed_y*glfwGetTime(); //Increase angle by the angle speed times the time passed since the previous frame
         glfwSetTime(0); //Zero time counter
         drawScene(window,angle_x,angle_y, models); //Execute drawing procedure
         glfwPollEvents(); //Execute callback procedures which process events
