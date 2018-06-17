@@ -2499,7 +2499,7 @@
 	<iostream>
 	"lodepng.h"
 
-1529245153 source:c:\users\maciej\documents\github\rollercoaster\main.cpp
+1529249570 source:c:\users\maciej\documents\github\rollercoaster\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
@@ -3080,7 +3080,7 @@
 	<vector>
 	<string>
 
-1529235923 c:\users\maciej\documents\github\rollercoaster\model.h
+1529248048 c:\users\maciej\documents\github\rollercoaster\model.h
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -3097,7 +3097,7 @@
 	<stdio.h>
 	<iostream>
 
-1529235923 source:c:\users\maciej\documents\github\rollercoaster\model.cpp
+1529248015 source:c:\users\maciej\documents\github\rollercoaster\model.cpp
 	"Model.h"
 	<stdlib.h>
 	<stdio.h>

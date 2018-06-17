@@ -9,9 +9,9 @@ Model::~Model()
 
 Model::Model() {}
 
-void Model::init(char* vertexShader, char* fragmentShader, char* textureFile ){
+void Model::init(char* vertexShader, char* fragmentShader, char* textureFile, ShaderProgram * shaderProgramCommon ){
     cout<<vertexShader<<" "<<fragmentShader<<" "<<textureFile<<endl;
-    shaderProgram = new ShaderProgram("vshader.glsl",NULL,"fshader.glsl");
+    shaderProgram = shaderProgramCommon;//new ShaderProgram("vshader.glsl",NULL,"fshader.glsl");
     cout<<vertexShader<<" "<<fragmentShader<<" "<<textureFile<<endl;
     tex0=readTexture(textureFile);
     prepareObject();
