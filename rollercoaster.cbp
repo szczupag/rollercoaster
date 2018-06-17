@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,18 +50,13 @@
 		</Linker>
 		<Unit filename="Object.cpp" />
 		<Unit filename="Object.hpp" />
-		<Unit filename="allmodels.h" />
 		<Unit filename="constants.h" />
-		<Unit filename="cube.cpp" />
 		<Unit filename="cube.h" />
 		<Unit filename="fshader.glsl" />
 		<Unit filename="lodepng.cpp" />
 		<Unit filename="lodepng.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="metal.png" />
-		<Unit filename="model.cpp" />
-		<Unit filename="model.h" />
-		<Unit filename="papaj.png" />
 		<Unit filename="shaderprogram.cpp" />
 		<Unit filename="shaderprogram.hpp" />
 		<Unit filename="torus.h" />

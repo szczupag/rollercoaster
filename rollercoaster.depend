@@ -1237,11 +1237,22 @@
 1528645848 c:\users\maciej\desktop\rollercoaster 2\cube.hpp
 	"model.h"
 
-1528645848 c:\users\maciej\desktop\rollercoaster 2\model.h
-	<vector>
-	"glm/glm.hpp"
+1529225854 c:\users\maciej\desktop\rollercoaster 2\model.h
+	<GL/glew.h>
 	<GLFW/glfw3.h>
-	"constants.h"
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	"glm/vec2.hpp"
+	"glm/vec3.hpp"
+	"glm/vec4.hpp"
+	<vector>
+	<string>
+	"shaderprogram.hpp"
+	"lodepng.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
 
 1528645848 c:\users\maciej\desktop\rollercoaster 2\glm\glm.hpp
 	"detail/_fixes.hpp"
@@ -1724,8 +1735,10 @@
 	<iostream>
 	"lodepng.h"
 
-1528645848 source:c:\users\maciej\desktop\rollercoaster 2\model.cpp
-	"model.h"
+1529226149 source:c:\users\maciej\desktop\rollercoaster 2\model.cpp
+	"Model.h"
+	<stdlib.h>
+	<stdio.h>
 
 1529186626 source:c:\users\maciej\desktop\rollercoaster 2\shaderprogram.cpp
 	"shaderprogram.hpp"
@@ -1743,7 +1756,7 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-1529189421 source:c:\users\maciej\desktop\rollercoaster 2\main.cpp
+1529226685 source:c:\users\maciej\desktop\rollercoaster 2\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
@@ -1754,9 +1767,10 @@
 	<stdio.h>
 	"shaderprogram.hpp"
 	"lodepng.h"
-	"cube.hpp"
 	"constants.h"
 	"Object.hpp"
+	"Model.h"
+	<vector>
 
 1528645852 c:\users\maciej\desktop\rollercoaster 2\glm\gtc\type_ptr.hpp
 	"../gtc/quaternion.hpp"
