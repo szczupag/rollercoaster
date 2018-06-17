@@ -1727,10 +1727,10 @@
 1528645848 source:c:\users\maciej\desktop\rollercoaster 2\model.cpp
 	"model.h"
 
-1528645848 source:c:\users\maciej\desktop\rollercoaster 2\shaderprogram.cpp
+1529186626 source:c:\users\maciej\desktop\rollercoaster 2\shaderprogram.cpp
 	"shaderprogram.hpp"
 
-1528645848 c:\users\maciej\desktop\rollercoaster 2\shaderprogram.hpp
+1529186626 c:\users\maciej\desktop\rollercoaster 2\shaderprogram.hpp
 	"GL/glew.h"
 	"stdio.h"
 
@@ -1743,7 +1743,7 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-1529179111 source:c:\users\maciej\desktop\rollercoaster 2\main.cpp
+1529189421 source:c:\users\maciej\desktop\rollercoaster 2\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
@@ -1835,14 +1835,14 @@
 	"../trigonometric.hpp"
 	"../matrix.hpp"
 
-1529178490 c:\users\maciej\desktop\rollercoaster 2\object.hpp
+1529186626 c:\users\maciej\desktop\rollercoaster 2\object.hpp
 	"glm/vec2.hpp"
 	"glm/vec3.hpp"
 	"glm/vec4.hpp"
 	<vector>
 	<string>
 
-1529179761 source:c:\users\maciej\desktop\rollercoaster 2\object.cpp
+1529186626 source:c:\users\maciej\desktop\rollercoaster 2\object.cpp
 	"Object.hpp"
 	<stdlib.h>
 	<stdio.h>

@@ -38,7 +38,7 @@
 			<Add directory="." />
 		</Compiler>
 		<Linker>
-			<Add library="glew/lib/glew32s.lib" />
+			<Add library="glew\lib\glew32s.lib" />
 			<Add library="glfw3" />
 			<Add library="opengl32" />
 			<Add library="gdi32" />
@@ -59,6 +59,7 @@
 		<Unit filename="metal.png" />
 		<Unit filename="model.cpp" />
 		<Unit filename="model.h" />
+		<Unit filename="papaj.png" />
 		<Unit filename="shaderprogram.cpp" />
 		<Unit filename="shaderprogram.hpp" />
 		<Unit filename="torus.h" />

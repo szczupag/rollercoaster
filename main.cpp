@@ -21,8 +21,8 @@
 #include "Object.hpp"
 using namespace glm;
 
-float speed_x = 0; // [radians/s]
-float speed_y = 0; // [radians/s]
+float speed_x = 20.24; // [radians/s]
+float speed_y = 20.24; // [radians/s]
 
 float aspect=1; //Ratio of width to height
 
@@ -182,7 +182,7 @@ void initOpenGLProgram(GLFWwindow* window) {
 
     shaderProgram=new ShaderProgram("vshader.glsl",NULL,"fshader.glsl"); //Read, compile and link the shader program
     shaderProgram2= new ShaderProgram("vshader.glsl", NULL, "fshader.glsl");
-    tex0=readTexture("metal.png");
+    tex0=readTexture("maciejXD.png");
 
     prepareObject(shaderProgram, &bufVertices, &bufColors, &bufNormals, &bufTexCoords, &vao, vertices, colors, normals, texCoords, vertexCount);
     prepareObject(shaderProgram2, &bufVertices2, &bufColors2, &bufNormals2, &bufTexCoords2, &vao2, vertices2, colors2, normals2, texCoords2, vertexCount2);
@@ -269,9 +269,9 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y) {
     glm::mat4 M2 = glm::mat4(1.0f);
 
 
-    M = glm::translate(M, glm::vec3(cos(angle_x)*10.0f, 0.0f, 0.0f));
-    M = glm::translate(M, glm::vec3(0.0f, sin(angle_y)*10.0f, 0.0f));
-    M = glm::translate(M, glm::vec3(0.0f, 0.0f, sin(angle_y)*15.0f));
+    M2 = glm::translate(M2, glm::vec3(cos(angle_x)*50.0f, 0.0f, 0.0f));
+    M2 = glm::translate(M2, glm::vec3(0.0f, sin(angle_y)*10.0f, 0.0f));
+    M2 = glm::translate(M2, glm::vec3(0.0f, 0.0f, sin(angle_y)*15.0f));
     M2 = glm::rotate(M2, angle_x *0.9f, glm::vec3(1, 0, 0));
     M2 = glm::rotate(M2, angle_y *0.5f, glm::vec3(0, 1, 0));
 
@@ -295,7 +295,7 @@ int main(void)
     }
 
     ModelO seat2;
-      if(!seat2.loadFromOBJFile("seat.obj")) {
+      if(!seat2.loadFromOBJFile("car_wtex.obj")) {
         return 1;
     }
 
