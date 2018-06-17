@@ -444,12 +444,18 @@ int main(void)
         return 1;
     }
 
+    Model sun;
+      if(!sun.loadFromOBJFile("sun.obj")){
+        return 1;
+    }
+
     models.push_back(&rails);
     models.push_back(&car);
     models.push_back(&cloud);
     models.push_back(&mountains);
     models.push_back(&trees);
     models.push_back(&support);
+    models.push_back(&sun);
 
     GLFWwindow* window; //Pointer to window object
 
@@ -486,6 +492,7 @@ int main(void)
     mountains.init("vshader.glsl", "fshader.glsl", "mountains_tex.png", shaderProgramCommon);
     trees.init("vshader.glsl", "fshader.glsl", "ground_blured.png", shaderProgramCommon);
     support.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
+    sun.init("vshader.glsl", "fshader.glsl", "cwiek.png", shaderProgramCommon);
 
 
 
