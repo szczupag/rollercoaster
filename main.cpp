@@ -257,6 +257,8 @@ int index = 0;
 
 glm::mat4 Mstart = glm::mat4(1.0f);
 
+glm::mat4 Mcloud = glm::mat4(1.0f);
+
 
 void moveCarClick(){
     glm::vec3 transVec = glm::vec3(trans[index],trans[index + 1] ,trans[index + 2] );
@@ -364,18 +366,10 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Clear color and depth buffers
 
-    glm::mat4 P = glm::perspective(50 * PI / 180,aspect, 1.0f, 1500.0f); //Compute projection matrix
 
-    glm::mat4 V = glm::lookAt( //Compute view matrix
-                              glm::vec3(0.0f, 0.0f, -60.0f),
-                              glm::vec3(0.0f, 0.0f, 0.0f),
-                              glm::vec3(0.0f, 10.0f, 10.0f));
-
-
-    //Compute model matrix
     glm::mat4 M = glm::mat4(1.0f);
 
-    glm::mat4 P2 = glm::perspective(50 * PI / 180,aspect, 1.0f, 360.0f); //Compute projection matrix
+    glm::mat4 P2 = glm::perspective(50 * PI / 180,aspect, 1.0f, 1000.0f); //Compute projection matrix
 
     glm::mat4 V2 = glm::lookAt( //Compute view matrix
                               cameraPos, cameraPos + cameraFront, cameraUp);
@@ -384,21 +378,19 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
         moveCarClick();
     }
 
+    Mcloud = glm::rotate(Mcloud, (float)glfwGetTime() * -0.0001f , glm::vec3(0.0f, 1.0f, 0.0f));
 
-    //g//lm::mat4 M2;
-    //if(first) {
-      //  M2 = glm::mat4(1.0f);
-    //} else {
-        //M2 = moveCar(M2);
-   // }
+
+
 
     for(int i = 0; i < models.size(); i++){
         if(i == 1){
             models[i]->drawObject(P2, V2, Mstart);
 
+        } else if (i == 2){
+            models[i]->drawObject(P2, V2, Mcloud);
         } else {
-            models[i]->drawObject(P2, V2, M);
-
+              models[i]->drawObject(P2, V2, M);
         }
     }
 
