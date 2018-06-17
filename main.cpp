@@ -23,9 +23,11 @@
 #include "Object.hpp"
 #include "Model.h"
 #include <vector>
+#include <windows.h>
 
 using namespace glm;
 
+float startTime = 0, endTime;
 float speed_x = 0.0001f; // [radians/s]
 float speed_y = 0; // [radians/s]
 vec3 cameraPos = vec3(0.0f, 50.0f, -120.0f);
@@ -266,6 +268,10 @@ void moveCarClick(){
    // Mstart = translate(Mstart, transVec);
     cout<<to_string(Mstart)<<endl;
     cout<<index<<endl;
+    //cout<<"translacja o "<<to_string(transVec)<<endl;
+    Mstart = translate(Mstart, transVec);
+    //cout<<to_string(Mstart)<<endl;
+    //cout<<index<<endl;
     index= (index+3);
         if(index == 627) {
         index = 0;
@@ -376,10 +382,17 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
                               cameraPos, cameraPos + cameraFront, cameraUp);
 
     if( ((int)(glfwGetTime() * 20)% 1) == 0){
+    //if( ((int)(glfwGetTime() * 20)% 1) == 0){
+      //  moveCarClick();
+    //}
+    cout<<glfwGetTime() - startTime<<endl;
+    if( glfwGetTime() - startTime > 0.01) {
         moveCarClick();
+        startTime = glfwGetTime();
     }
 
     Mcloud = glm::rotate(Mcloud, (float)glfwGetTime() * -0.0001f , glm::vec3(0.0f, 1.0f, 0.0f));
+    Mcloud = glm::rotate(Mcloud, -0.001f , glm::vec3(0.0f, 1.0f, 0.0f));
 
 
 
