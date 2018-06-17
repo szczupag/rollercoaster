@@ -23,8 +23,8 @@
 
 using namespace glm;
 
-float speed_x = 3.24; // [radians/s]
-float speed_y = 3.24; // [radians/s]
+float speed_x = 0; // [radians/s]
+float speed_y = 0; // [radians/s]
 
 float aspect=1; //Ratio of width to height
 
@@ -86,8 +86,8 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, vector<Model*> 
 
     glm::mat4 V = glm::lookAt( //Compute view matrix
                               glm::vec3(0.0f, 0.0f, -60.0f),
-                              glm::vec3(0.0f, 0.0f, 0.0f),
-                              glm::vec3(0.0f, 1.0f, 0.0f));
+                              glm::vec3(0.0f, 0.0f, -20.0f),
+                              glm::vec3(0.0f, 1.0f, -20.0f));
 
 
     //Compute model matrix
@@ -138,12 +138,12 @@ int main(void)
     }
 
     Model car;
-      if(!car.loadFromOBJFile("car_wtex.obj")) {
+      if(!car.loadFromOBJFile("car.obj")) {
         return 1;
     }
 
     Model cloud;
-    if(!cloud.loadFromOBJFile("cloud3.obj")){
+    if(!cloud.loadFromOBJFile("clouds_attatched.obj")){
         return 1;
     }
 
