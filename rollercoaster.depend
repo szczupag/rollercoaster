@@ -1984,12 +1984,13 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-1529235573 source:d:\agata\github_projekty\rollercoaster\main.cpp
+1529260123 source:d:\agata\github_projekty\rollercoaster\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
+	<glm/gtx/string_cast.hpp>
 	<glm/gtc/matrix_transform.hpp>
 	<stdlib.h>
 	<stdio.h>
@@ -2463,7 +2464,7 @@
 
 1529188014 d:\agata\github_projekty\rollercoaster\constants.h
 
-1529231328 d:\agata\github_projekty\rollercoaster\model.h
+1529255379 d:\agata\github_projekty\rollercoaster\model.h
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -2480,7 +2481,7 @@
 	<stdio.h>
 	<iostream>
 
-1529231328 source:d:\agata\github_projekty\rollercoaster\model.cpp
+1529255379 source:d:\agata\github_projekty\rollercoaster\model.cpp
 	"Model.h"
 	<stdlib.h>
 	<stdio.h>
@@ -3149,6 +3150,48 @@
 	<limits>
 
 1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtx\string_cast.inl
+	<cstdarg>
+	<cstdio>
+
+1529188015 d:\agata\github_projekty\rollercoaster\glm\gtx\string_cast.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	"../gtc/quaternion.hpp"
+	"../gtx/dual_quaternion.hpp"
+	<string>
+	<cmath>
+	"string_cast.inl"
+
+1529188015 d:\agata\github_projekty\rollercoaster\glm\gtc\type_precision.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"type_precision.inl"
+
+1529188015 d:\agata\github_projekty\rollercoaster\glm\gtc\type_precision.inl
+
+1529188015 d:\agata\github_projekty\rollercoaster\glm\gtx\dual_quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"dual_quaternion.inl"
+
+1529188015 d:\agata\github_projekty\rollercoaster\glm\gtx\dual_quaternion.inl
+	"../geometric.hpp"
+	<limits>
+
+1529188015 d:\agata\github_projekty\rollercoaster\glm\gtx\string_cast.inl
 	<cstdarg>
 	<cstdio>
 

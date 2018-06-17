@@ -55,6 +55,7 @@
 		<Unit filename="constants.h" />
 		<Unit filename="cube.h" />
 		<Unit filename="fshader.glsl" />
+ <Unit filename="fshader2.glsl" />
 		<Unit filename="lodepng.cpp" />
 		<Unit filename="lodepng.h" />
 		<Unit filename="main.cpp" />
@@ -63,7 +64,7 @@
 		<Unit filename="shaderprogram.hpp" />
 		<Unit filename="torus.h" />
 		<Unit filename="vshader.glsl" />
-		<Extensions>
+ <Unit filename="vshader2.glsl" />		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
