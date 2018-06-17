@@ -264,10 +264,6 @@ glm::mat4 Mcloud = glm::mat4(1.0f);
 
 void moveCarClick(){
     glm::vec3 transVec = glm::vec3(trans[index],trans[index + 1] ,trans[index + 2] );
-    cout<<"translacja o "<<to_string(transVec)<<endl;
-   // Mstart = translate(Mstart, transVec);
-    cout<<to_string(Mstart)<<endl;
-    cout<<index<<endl;
     //cout<<"translacja o "<<to_string(transVec)<<endl;
     Mstart = translate(Mstart, transVec);
     //cout<<to_string(Mstart)<<endl;
@@ -381,7 +377,6 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
     glm::mat4 V2 = glm::lookAt( //Compute view matrix
                               cameraPos, cameraPos + cameraFront, cameraUp);
 
-    if( ((int)(glfwGetTime() * 20)% 1) == 0){
     //if( ((int)(glfwGetTime() * 20)% 1) == 0){
       //  moveCarClick();
     //}
@@ -391,7 +386,6 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
         startTime = glfwGetTime();
     }
 
-    Mcloud = glm::rotate(Mcloud, (float)glfwGetTime() * -0.0001f , glm::vec3(0.0f, 1.0f, 0.0f));
     Mcloud = glm::rotate(Mcloud, -0.001f , glm::vec3(0.0f, 1.0f, 0.0f));
 
 
