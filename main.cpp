@@ -263,7 +263,7 @@ glm::mat4 Mcloud = glm::mat4(1.0f);
 void moveCarClick(){
     glm::vec3 transVec = glm::vec3(trans[index],trans[index + 1] ,trans[index + 2] );
     cout<<"translacja o "<<to_string(transVec)<<endl;
-    Mstart = translate(Mstart, transVec);
+   // Mstart = translate(Mstart, transVec);
     cout<<to_string(Mstart)<<endl;
     cout<<index<<endl;
     index= (index+3);
@@ -478,13 +478,12 @@ int main(void)
 
     initOpenGLProgram(window); //Initialization procedure
     rails.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
-    car.init("vshader.glsl", "fshader.glsl", "bricks.png", shaderProgramCommon);
+    car.init("vshader.glsl", "fshader.glsl", "autgo.png", shaderProgramCommon);
     cloud.init("vshader.glsl", "fshader.glsl", "white.png", shaderProgramCommon);
     mountains.init("vshader.glsl", "fshader.glsl", "mountains_tex.png", shaderProgramCommon);
     trees.init("vshader.glsl", "fshader.glsl", "ground_blured.png", shaderProgramCommon);
     support.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
     sun.init("vshader.glsl", "fshader.glsl", "sun_tex.png", shaderProgram2);
-
 
 
     float angle_x = 0; //Object rotation angle
