@@ -245,7 +245,7 @@ float trans[627] = {
 };
 
 ShaderProgram * shaderProgramCommon;
-
+ShaderProgram * shaderProgram2;
 float lastX = 400, lastY = 300;
 bool firstMouse = true;
 float pitch2 = 0.0f, yaw2 = 0.0f;
@@ -352,6 +352,7 @@ void initOpenGLProgram(GLFWwindow* window) {
     glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetFramebufferSizeCallback(window,windowResize);
     shaderProgramCommon = new ShaderProgram("vshader.glsl",NULL,"fshader.glsl");
+    shaderProgram2 = new ShaderProgram("vshader2.glsl",NULL,"fshader2.glsl");
 }
 
 //Freeing of resources
@@ -482,7 +483,7 @@ int main(void)
     mountains.init("vshader.glsl", "fshader.glsl", "mountains_tex.png", shaderProgramCommon);
     trees.init("vshader.glsl", "fshader.glsl", "ground_blured.png", shaderProgramCommon);
     support.init("vshader.glsl", "fshader.glsl", "metal.png", shaderProgramCommon);
-    sun.init("vshader.glsl", "fshader.glsl", "sun_tex.png", shaderProgramCommon);
+    sun.init("vshader.glsl", "fshader.glsl", "sun_tex.png", shaderProgram2);
 
 
 
