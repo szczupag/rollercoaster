@@ -25,6 +25,10 @@ using namespace glm;
 
 float speed_x = 0; // [radians/s]
 float speed_y = 0; // [radians/s]
+vec3 cameraPos = vec3(0.0f, 10.0f, -60.0f);
+vec3 cameraFront = vec3(0.0f, 0.0f, -1.0f);
+vec3 cameraUp = vec3(0.0f, 1.0f, 0.0f);
+
 
 float aspect=1; //Ratio of width to height
 
@@ -35,11 +39,13 @@ void error_callback(int error, const char* description) {
 //Key event processing procedure
 void key_callback(GLFWwindow* window, int key,
                   int scancode, int action, int mods) {
+    float cameraSpeed = 0.5f;
+
     if (action == GLFW_PRESS) {
-        if (key == GLFW_KEY_LEFT) speed_y = -3.14;
-        if (key == GLFW_KEY_RIGHT) speed_y = 3.14;
-        if (key == GLFW_KEY_UP) speed_x = -3.14;
-        if (key == GLFW_KEY_DOWN) speed_x = 3.14;
+        if (key == GLFW_KEY_LEFT)  cameraPos -= normalize(cross(cameraFront, cameraUp)) * cameraSpeed;
+        if (key == GLFW_KEY_RIGHT)  cameraPos += normalize(cross(cameraFront, cameraUp)) * cameraSpeed;
+        if (key == GLFW_KEY_UP)  cameraPos += cameraSpeed * cameraFront;
+        if (key == GLFW_KEY_DOWN)  cameraPos -= cameraSpeed * cameraFront;
     }
 
 
@@ -93,23 +99,22 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, vector<Model*> 
     //Compute model matrix
     glm::mat4 M = glm::mat4(1.0f);
 
-    glm::mat4 P2 = glm::perspective(50 * PI / 180,aspect, 1.0f, 400.0f); //Compute projection matrix
+    glm::mat4 P2 = glm::perspective(50 * PI / 180,aspect, 1.0f, 360.0f); //Compute projection matrix
 
     glm::mat4 V2 = glm::lookAt( //Compute view matrix
-                              glm::vec3(0.0f, 0.0f, -60.0f),
-                              glm::vec3(0.0f, 0.0f, 0.0f),
-                              glm::vec3(0.0f, 1.0f, 0.0f));
+                              cameraPos, cameraPos + cameraFront, cameraUp);
 
 
     //Compute model matrix
     glm::mat4 M2 = glm::mat4(1.0f);
 
 
-    M2 = glm::translate(M2, glm::vec3(cos(angle_x)*50.0f, 0.0f, 0.0f));
-    M2 = glm::translate(M2, glm::vec3(0.0f, sin(angle_y)*10.0f, 0.0f));
-    M2 = glm::translate(M2, glm::vec3(0.0f, 0.0f, sin(angle_y)*15.0f));
-    M2 = glm::rotate(M2, angle_x *0.9f, glm::vec3(1, 0, 0));
-    M2 = glm::rotate(M2, angle_y *0.5f, glm::vec3(0, 1, 0));
+//    M2 = glm::translate(M2, glm::vec3(cos(angle_x)*50.0f, 0.0f, 0.0f));
+  //  M2 = glm::translate(M2, glm::vec3(0.0f, sin(angle_y)*10.0f, 0.0f));
+    //M2 = glm::translate(M2, glm::vec3(0.0f, 0.0f, sin(angle_y)*15.0f));
+
+    //M2 = glm::rotate(M2, angle_x *0.9f, glm::vec3(1, 0, 0));
+    //M2 = glm::rotate(M2, angle_y *0.5f, glm::vec3(0, 1, 0));
 
 
     //Draw object
@@ -117,7 +122,13 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, vector<Model*> 
   //  drawObject(vao2,shaderProgram2, P2,V2,M2, vertexCount2);mode
 
     for(int i = 0; i < models.size(); i++){
-        models[i]->drawObject(P2, V2, M2);
+        if(i == 1){
+            models[i]->drawObject(P2, V2, M2);
+
+        } else {
+            models[i]->drawObject(P2, V2, M);
+
+        }
     }
 
 

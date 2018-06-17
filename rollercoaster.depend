@@ -2485,3 +2485,627 @@
 	<stdlib.h>
 	<stdio.h>
 
+1529235923 source:c:\users\maciej\documents\github\rollercoaster\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1529235923 c:\users\maciej\documents\github\rollercoaster\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1529238518 source:c:\users\maciej\documents\github\rollercoaster\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"shaderprogram.hpp"
+	"lodepng.h"
+	"constants.h"
+	"Object.hpp"
+	"Model.h"
+	<vector>
+
+1529221700 c:\users\maciej\documents\github\rollercoaster\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1529221700 c:\users\maciej\documents\github\rollercoaster\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\_fixes.hpp
+	<cmath>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\fwd.hpp
+	"detail/setup.hpp"
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec.hpp
+	"qualifier.hpp"
+	"type_int.hpp"
+	"compute_vector_relational.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<cstring>
+	<limits>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat.hpp
+	"qualifier.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\vec2.hpp
+	"detail/setup.hpp"
+	"detail/type_vec2.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\_swizzle.hpp
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\_swizzle_func.hpp
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec2.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\vec3.hpp
+	"detail/setup.hpp"
+	"detail/type_vec3.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec3.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\vec4.hpp
+	"detail/setup.hpp"
+	"detail/type_vec4.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec4_simd.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat2x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x2.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/type_mat.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat2x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x3.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat2x3.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat2x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x4.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat2x4.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat3x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x2.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat3x2.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat3x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x3.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat3x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x4.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat3x4.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat4x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x2.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x2.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat4x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x3.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x3.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\mat4x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x4.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_mat4x4_simd.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec1.hpp
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_vector_relational.inl
+	"compute_vector_relational.hpp"
+	"func_vector_relational_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_vector_relational_simd.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\simd\exponential.h
+	"platform.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\common.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/type_int.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\simd\common.h
+	"platform.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\simd\geometric.h
+	"common.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\simd\matrix.h
+	"geometric.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_trigonometric_simd.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\packing.hpp
+	"detail/type_vec2.hpp"
+	"detail/type_vec4.hpp"
+	"detail/func_packing.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_half.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_packing_simd.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\integer.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_integer.inl
+	"../ext/vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\ext\vec1.hpp
+	"../fwd.hpp"
+	"../detail/type_vec.hpp"
+	"../detail/_swizzle.hpp"
+	"../detail/_swizzle_func.hpp"
+	<cstddef>
+	"../detail/type_vec1.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\type_vec1.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\simd\integer.h
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\constants.inl
+	<limits>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../detail/compute_vector_relational.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/type_vec.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\quaternion_simd.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\vec1.hpp
+	"../ext/vec1.hpp"
+	"vec1.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\vec1.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\type_ptr.inl
+	<cstring>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1529235924 c:\users\maciej\documents\github\rollercoaster\shaderprogram.hpp
+	"GL/glew.h"
+	"stdio.h"
+
+1529235923 c:\users\maciej\documents\github\rollercoaster\constants.h
+
+1529235923 c:\users\maciej\documents\github\rollercoaster\object.hpp
+	"glm/vec2.hpp"
+	"glm/vec3.hpp"
+	"glm/vec4.hpp"
+	<vector>
+	<string>
+
+1529235923 c:\users\maciej\documents\github\rollercoaster\model.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	"glm/vec2.hpp"
+	"glm/vec3.hpp"
+	"glm/vec4.hpp"
+	<vector>
+	<string>
+	"shaderprogram.hpp"
+	"lodepng.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+
+1529235923 source:c:\users\maciej\documents\github\rollercoaster\model.cpp
+	"Model.h"
+	<stdlib.h>
+	<stdio.h>
+
+1529235923 source:c:\users\maciej\documents\github\rollercoaster\object.cpp
+	"Object.hpp"
+	<stdlib.h>
+	<stdio.h>
+
+1529235924 source:c:\users\maciej\documents\github\rollercoaster\shaderprogram.cpp
+	"shaderprogram.hpp"
+
