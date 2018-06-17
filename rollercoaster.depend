@@ -1984,7 +1984,7 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-1529260123 source:d:\agata\github_projekty\rollercoaster\main.cpp
+1529269214 source:d:\agata\github_projekty\rollercoaster\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
