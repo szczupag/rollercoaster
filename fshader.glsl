@@ -17,7 +17,7 @@ void main(void) {
     vec4 kd=texture(textureMap0,iTexCoord0); //Object color in the diffused light
     vec4 ks=texture(textureMap0,iTexCoord0); //Object color in the specular light
 
-    vec4 la=vec4(0,0,0,0); //Ambient light color
+    vec4 la=vec4(1,0,0,0); //Ambient light color
     vec4 ld=vec4(1,1,1,1); //Diffuse light color
     vec4 ls=vec4(1,1,1,0); //Specular light color
 

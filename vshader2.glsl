@@ -20,7 +20,7 @@ out vec2 iTexCoord0; //texturing coordinates
 
 void main(void) {
 
-    vec4 lp=vec4(0,100,-6,1); //Light position in the world space
+    vec4 lp=vec4(-50,120,0,1); //Light position in the world space
 
     l=normalize(V*lp-V*M*vertex); //Light vector, eye space
     n=normalize(V*M*normal); //Normal vector, eye space

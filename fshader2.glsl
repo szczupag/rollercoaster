@@ -13,7 +13,7 @@ uniform sampler2D textureMap0;
 //uniform sampler2D textureMap1;
 
 void main(void) {
-    vec4 ka=vec4(1,0.5,0.5,0.5); //Object color in the ambient light
+    vec4 ka=vec4(0,0,0,0); //Object color in the ambient light
     vec4 kd=texture(textureMap0,iTexCoord0); //Object color in the diffused light
     vec4 ks=texture(textureMap0,iTexCoord0); //Object color in the specular light
 
@@ -29,5 +29,5 @@ void main(void) {
     float nl=max(dot(n,l),0); //cosine of the angle between normal and light vectors
     float rv=pow(max(dot(mr,mv),0),10); //cosine of the angle between reflected and view vectors to the power of 10
 
-    pixelColor=ka*la+kd*ld*vec4(nl,nl,nl,1)+ls*rv; //Phong shading model
+    pixelColor=ka*la+kd*ld*vec4(nl,nl,nl,1)+ls*rv*ks; //Phong shading model
 }
