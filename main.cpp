@@ -28,7 +28,7 @@ using namespace glm;
 
 float speed_x = 0.0001f; // [radians/s]
 float speed_y = 0; // [radians/s]
-vec3 cameraPos = vec3(0.0f, 10.0f, -60.0f);
+vec3 cameraPos = vec3(0.0f, 50.0f, -120.0f);
 vec3 cameraFront = vec3(0.0f, 0.0f, -1.0f);
 vec3 cameraUp = vec3(0.0f, 1.0f, 0.0f);
 
@@ -387,7 +387,7 @@ void drawScene(GLFWwindow* window, vector<Model*> & models) {
         if(i == 1){
             models[i]->drawObject(P2, V2, Mstart);
 
-        } else if (i == 2 || i == 6){
+        } else if (i == 2){
             models[i]->drawObject(P2, V2, Mcloud);
         } else {
               models[i]->drawObject(P2, V2, M);
