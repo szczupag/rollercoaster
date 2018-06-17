@@ -2499,12 +2499,13 @@
 	<iostream>
 	"lodepng.h"
 
-1529240379 source:c:\users\maciej\documents\github\rollercoaster\main.cpp
+1529245153 source:c:\users\maciej\documents\github\rollercoaster\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
 	<glm/gtc/type_ptr.hpp>
+	<glm/gtx/string_cast.hpp>
 	<glm/gtc/matrix_transform.hpp>
 	<stdlib.h>
 	<stdio.h>
@@ -3108,4 +3109,46 @@
 
 1529235924 source:c:\users\maciej\documents\github\rollercoaster\shaderprogram.cpp
 	"shaderprogram.hpp"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtx\string_cast.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	"../gtc/quaternion.hpp"
+	"../gtx/dual_quaternion.hpp"
+	<string>
+	<cmath>
+	"string_cast.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\type_precision.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"type_precision.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtc\type_precision.inl
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtx\dual_quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"dual_quaternion.inl"
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtx\dual_quaternion.inl
+	"../geometric.hpp"
+	<limits>
+
+1529184416 c:\users\maciej\documents\github\rollercoaster\glm\gtx\string_cast.inl
+	<cstdarg>
+	<cstdio>
 
